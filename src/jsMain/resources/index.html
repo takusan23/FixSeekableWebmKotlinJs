@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FixSeekableWebmKotlinJs</title>
+</head>
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+</style>
+<body>
+<div class="column">
+    <h1>JavaScript の MediaRecorder で作った WebM をシーク可能な WebM ファイルに修正する Kotlin/JS</h1>
+    <p>処理はすべてブラウザ側の JavaScript で完結します。</p>
+
+    <form>
+        <label for="webm_picker">WebM ファイル:</label>
+        <input type="file" id="webm_picker" accept="video/webm"/>
+    </form>
+
+    <button id="start_button">処理を開始</button>
+
+    <p id="status_text">進捗</p>
+</div>
+<script src="FixSeekableWebmKotlinJs.js"></script>
+</body>
+</html>
