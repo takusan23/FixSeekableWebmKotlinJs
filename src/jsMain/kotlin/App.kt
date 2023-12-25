@@ -48,13 +48,12 @@ private fun setupScreenRecorde() {
             // 録画データが細切れになって呼ばれる
             mediaRecorder.ondataavailable = { ev: dynamic ->
                 chunks.add(ev.data as Blob)
-                Unit
+                Unit // 適当に値を返す
             }
             // 録画開始
             mediaRecorder.start(100)
             isRecording = true
-            // 適当に値を返す
-            Unit
+            Unit // 適当に値を返す
         }.catch { err: dynamic -> console.log(err); window.alert("エラーが発生しました") }
     }
 
